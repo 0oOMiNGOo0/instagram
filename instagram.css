@@ -1,0 +1,244 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+} 
+.color1{
+    color: rgb(38, 38, 38);
+}
+.color2{
+    color: rgb(142, 142, 142);
+}
+.color3{
+    color: #ED4956;
+    font-weight: 700;
+}
+.color4{
+    color: rgb(38, 38, 38);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Billabong';
+    src: url('Billabong.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+.text1{
+    font-size: 16px;
+    position: absolute;
+    left: 65;
+    font-weight: 400;
+}
+.text2{
+    font-family: 'Billabong', sans-serif;
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 60px;
+    left: -50;
+}
+.text3{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(199, 199, 199);
+}
+.text3:hover{
+    text-decoration: underline;
+}
+.storyid{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 3px;
+}
+.icon{
+    float: left;
+    font-size: 22px;
+    transition: font-size 0.3s;
+    padding: 10px;
+}
+.profile{
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    float: left;
+    transition: width 0.3s;
+    margin: 10px;
+}
+.profile2{
+    width: 55px;
+    border-radius: 50%;
+    border: 0.2px solid rgba(124, 124, 124, 0.7);
+    box-shadow: 0 0 0 2px white;
+}
+.profile3{
+    width: 32px;
+    border-radius: 50%;
+    border: 0.2px solid rgba(124, 124, 124, 0.7);
+    box-shadow: 0 0 0 2px white;
+    margin: 10px 0px 10px 5px;
+}
+.havestory{
+    background-image: url("instagram_logo.png");
+    background-color: white;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background-size: 105%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+    padding: 3px;
+}
+.graybox{
+    width: 220px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 5px 0px;
+    background-color: rgb(183, 183, 183, 0);
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+.graybox:hover{
+    background-color: hsla(0, 0%, 72%, 0.10);
+}
+.graybox:hover > .icon{
+    font-size: 24px;
+}
+.graybox:hover > .profile{
+    width: 27px;
+}
+.iconbox{
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 235px;
+    height: 100%;
+    border-right-style: groove;
+    border-color: rgba(206, 206, 206, 0.248);
+    float: left;
+}
+.main{
+    width: calc(100% - 660px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profiles{
+    width: 425px;
+    height: 100%;
+    padding-top: 60px;
+}
+.mine{
+    width: auto;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+}
+.pplbox{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+}
+.id_text{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 20px;
+}    
+.id_description{
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 2px;
+    margin-left: 20px;
+}
+.following{
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 20px;
+    float: left;
+    padding-top: 2px;
+}
+.body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.stories{
+    width: 630px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    margin: 50px 95px;
+    gap: 12px;
+    overflow-x: scroll;
+}
+.story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ppl{
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.additional{
+    display: block;
+    margin-top: 20px;
+}
+.feed{
+    width: 470px;
+    height: 800px;
+}
+.feedprofile{
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+.feedimage{
+    width: 470px;
+    height: 587px;
+    z-index: 2;
+}
+.a{
+    opacity: 100%;
+}
+.a:hover{
+    opacity: 30%;
+}
+#check-btn{display: none;}
+#check-btn:checked ~ .menubars{
+    display: block;
+    width: 440px;
+    height: 424px;
+    animation-duration: 0.1s;
+} 
+.menubars{
+    display: none;
+    background-color: white;
+    width: 400px;
+    height: 384px;
+    z-index: 1;
+}
+.menu{
+    width: 400px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid;
+    border-color: rgba(206, 206, 206, 0.248);
+}
+.menutext{
+    font-size: 14px;
+}
